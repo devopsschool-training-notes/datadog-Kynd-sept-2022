@@ -1,0 +1,98 @@
+Demo + Lab = AWS
+========================
+Assignment  - https://www.debug.school/
+========================================
+Datadog?
+			Monitoring
+			
+What is Obserabability?
+
+		Infra Monitoring
+		APM Monitoring
+		Log Monitoring
+		Syn Monitoring
+		RUM Monitoring
+		------------------
+		Alerts + Dashboard
+
+Assignment
+================================
+Write 10 lines answers for following question. Please use 2 useful image which should be very relevant and meaningful in this context.
+
+What is Monitoring? 
+What is observability and hows its different from Monitoring?
+What are action items for setting up observability?
+============================================
+How to monitor Windows Server using Datadog?
+https://www.devopsschool.com/blog/datadog-agent-setup-in-windows-step-by-step-guide/
+-------------------------------------------
+Step 1	- Install DATADOG Agent
+									CPU
+									RAM
+									NET
+									DISK
+Step 2 	- Validate at Datadog Website
+=============================================
+3.111.245.162
+centos
+KEY - ppk
+
+How to become a root?
+$ sudo -s
+
+How to download Putty - ?? URL
+https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+
+How to install datadog agent in Linux
+https://www.devopsschool.com/blog/how-to-install-datadog-agent-in-centos/
+
+How to Enabled Process monitoring?
+https://www.devopsschool.com/blog/how-to-enable-live-process-monitoring-in-datadog-agent/
+
+
+servesh babu			3.110.106.226
+Preetham Keekan		43.205.194.15
+Jaya Bharath Reddy Narsing	65.2.168.133
+SOURAV KARMAKAR			13.126.115.178
+Nandini Nanepalli			13.127.149.248
+Harish Bheri				15.207.87.49
+Vasim Akram Shaik		13.233.16.69
+Deborah Mahima			13.126.231.154
+Haripriya A			65.1.65.146
+C R PRAWIN BHALAJI		3.109.48.158
+Runkana Indumathi		43.205.237.189	
+Vikraman Sriram		3.111.147.188
+Vijaya Baskar 		65.2.148.14
+Hari Krishnan G		43.205.206.173
+Mahesh Batta			43.205.230.0
+Deepak dhodi			13.233.86.88
+Chedurla Pavani		13.233.183.255
+
+
+
+13.233.84.174
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
