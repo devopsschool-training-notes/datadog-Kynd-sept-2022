@@ -1,0 +1,44 @@
+Demo - How to monitor Docker using Datadog?
+- https://www.devopsschool.com/blog/how-to-enable-docker-container-monitoring-in-datadog-agent/
+Demo - How to monitor Apache HTTP using Datadog?
+- https://www.devopsschool.com/blog/how-to-install-configure-datadog-integration-with-apache-httpd/
+
+Discussion - About Agent
+==================================================
+my Linux - 13.232.135.191
+
+
+How to troubleshoot agent not reporting to Datadog?
+- Verify API token 		(datadog.yaml)
+- Verify site/region	(datadog.yaml)
+- Agent is running or not
+======================================================
+How to run apps?
+------------------------
+Phsycial Server  ====> Virtual Server		==> container(APP)
+
+laptop					aws|vmware|azure		docker(Platform)
+
+1 days					5 mins					1 sec
+--------------------------------------------------------
+Youtube - TheDevOpsSchool | Debug School | scmgalaxy
+
+servesh babu				13.127.127.24	
+Preetham Keekan				13.232.136.237
+Jaya Bharath Reddy Narsing		13.232.136.237
+SOURAV KARMAKAR						52.66.176.80
+Nandini Nanepalli			13.126.45.174		
+Harish Bheri				65.0.91.213		
+Vasim Akram Shaik				13.233.14.121
+Deborah Mahima				13.233.138.112	
+Haripriya A						3.111.170.165
+C R PRAWIN BHALAJI			15.206.123.213		
+Runkana Indumathi			13.233.21.47			
+Vikraman Sriram				43.205.241.81	
+Vijaya Baskar 				15.206.171.211	
+Hari Krishnan G					13.232.249.75
+Mahesh Batta				65.0.3.128		
+Deepak dhodi				13.126.97.245		
+Chedurla Pavani				13.232.241.47
+
+13.232.76.23
