@@ -1,0 +1,63 @@
+servesh babu				52.66.196.225			
+Preetham Keekan				65.2.168.178			
+Jaya Bharath Reddy Narsing		13.233.198.241		
+SOURAV KARMAKAR				43.205.116.68					
+Nandini Nanepalli				13.232.60.8				
+Harish Bheri				3.109.216.248			
+Vasim Akram Shaik				13.126.171.153			
+Deborah Mahima				15.206.158.10				
+Haripriya A					13.235.9.112				
+C R PRAWIN BHALAJI			52.66.198.21				
+Runkana Indumathi				13.234.226.114					
+Vikraman Sriram				13.233.250.192				
+Vijaya Baskar 				13.127.247.50				
+Hari Krishnan G				13.232.158.247				
+Mahesh Batta				13.233.162.118			
+Deepak dhodi				35.154.20.35				
+Chedurla Pavani				3.108.228.130
+
+15.207.86.129	
+
+
+MINE
+13.232.227.64		
+===========================================================================
+How to setup APM monitoring for Java Based app in Linux?
+---------------------------------------------------------
+https://www.devopsschool.com/blog/how-to-setup-datadog-apm-for-java-application-running-with-tomcat/
+
+Step 1 - Install Datadog Agent (Tool)			DONE
+
+Step 2 - Install Tomcat & Start Tomcat			DONE
+
+Step 3 - Install Datadog APM Agent (Code)			DONE
+
+Step 4 - Deploy 1 App in Tomcat
+
+Step 5 - Generate Traffic using JMETER
+
+https://www.devopsschool.com/blog/how-to-install-and-configure-jemeter/
+https://www.guru99.com/jmeter-performance-testing.html
+
+
+Step 6 - Learning APM Dashboard
+
+
+CATALINA_OPTS="$CATALINA_OPTS -javaagent:/opt/dd-java-agent.jar -Ddd.profiling.enabled=true -Ddd.logs.injection=true -Ddd.trace.sample.rate=1 -Ddd.service=devopsschool-bank -Ddd.env=prod -Ddd.version=1.0"
+
+
+
+http://13.232.227.64:8080/examples/servlets/servlet/HelloWorldExample
+
+
+
+
+
+
+
+
+
+
+
+
+
