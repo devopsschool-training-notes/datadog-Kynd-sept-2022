@@ -1,0 +1,66 @@
+servesh babu			13.234.114.195					
+Preetham Keekan			35.154.237.20					
+Jaya Bharath Reddy Narsing	13.127.31.156				
+SOURAV KARMAKAR			15.206.81.216							
+Nandini Nanepalli			15.207.85.252				
+Harish Bheri			65.2.146.150						
+Vasim Akram Shaik			43.205.125.17					
+Deborah Mahima			43.205.191.214						
+Haripriya A				65.2.179.49					
+C R PRAWIN BHALAJI		13.126.244.93					
+Runkana Indumathi			13.126.92.209							
+Vikraman Sriram			65.1.86.81					
+Vijaya Baskar 			52.66.214.57						
+Hari Krishnan G			43.205.113.62					
+Mahesh Batta			43.205.253.50			
+Deepak dhodi			3.6.89.175						
+Chedurla Pavani				43.205.116.40	
+
+43.205.114.11
+
+grep -o "[0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+" ssl_request_log | sort | uniq -c
+
+grep -o 'POST [^ ]\+ ' ssl_request_log | sort | uniq -c | sort
+grep -o 'POST [^ ]\+ ' access_log | sort | uniq -c | sort
+
+MINE
+13.234.213.102
+=====================================================
+
+telnet intake.logs.datadoghq.com 10514
+
+87b9dbcda7e5d069cd30a0f68154cca27 {"message":"Welcome to Datadog Session by DevOpsSchool - 1", "ddtags":"env:dev", "ddsource":"devopsschool-1", "hostname":"gs-hostame", "service":"user"}
+
+87b9dbcda7ed5069cd30a0f68154cca27 {"message":"Welcome to Datadog Session by DevOpsSchool - 2", "ddtags":"env:prod", "ddsource":"devopsschool-2", "hostname":"gs-hostame", "service":"user"}
+
+87b9dbcda7ed5069cd30a0f68154cca27 {"message":"Welcome to Datadog Session by DevOpsSchool - 3", "ddtags":"env:qa", "ddsource":"devopsschool-3", "hostname":"gs-hostame", "service":"user"}
+
+87b9dbcda7de5069cd30a0f68154cca27 {"message":"Welcome to Datadog Session by DevOpsSchool - 4", "ddtags":"env:us", "ddsource":"devopsschool-3", "hostname":"gs-hostame", "service":"user"}
+
+
+
+curl -X POST "https://http-intake.logs.datadoghq.com/api/v2/logs" \
+-H "Content-Type: application/json" \
+-H "DD-API-KEY: 87b9dbcda7e5069cd30a4468154cca27" \
+-d @- << EOF
+[
+  {
+    "ddsource": "nginx",
+    "ddtags": "env:staging,version:5.1",
+    "hostname": "i-012345678",
+    "message": "2019-11-19T14:37:58,995 INFO [process.name][20081] Hello World",
+    "service": "payment"
+  }
+]
+EOF
+
+
+
+
+
+
+
+
+
+
+
