@@ -54,13 +54,55 @@ curl -X POST "https://http-intake.logs.datadoghq.com/api/v2/logs" \
 ]
 EOF
 
+=======================================================
+How to do log collection of Linux or custom file using Datadog agent?
+How to do log collection of Apache using Integration?
+
+https://www.devopsschool.com/blog/datadog-log-setup-apache-log-analsys/
+https://www.devopsschool.com/blog/datadog-log-filter-logs-scrub-data-tail-with-wildcards/
+
+Assignment
+How to do log collection for windows using Datadog agent?
+
+=================================
+- Install the Datadog Agent
+
+- Verify Datadog Agent Status and Look for "Logs Agent" which is not running.
+$ sudo datadog-agent status
+
+- Enable log collection
+To enable log collection with the Agent, edit the datadog.yaml configuration file located at /etc/datadog-agent/datadog.yaml and set logs_enabled:true
+
+- Monitor a custom file
+$ touch /tmp/log_file_to_monitor.log
+$ echo "First line of log" >> /tmp/log_file_to_monitor.log
+$ sudo mkdir /etc/datadog-agent/conf.d/custom_log_collection.d/
+$ sudo touch /etc/datadog-agent/conf.d/custom_log_collection.d/conf.yaml
+logs:
+    - type: file
+      path: /tmp/log_file_to_monitor.log
+      source: devopsschool
+      service: chat
+$ sudo service datadog-agent restart
+
+-  Validation. Verify Dsudo datadog-agent status
+atadog Agent Status and Look for "Logs Agent" which is running.
+$
+- Add new logs to the file
+$ echo "New line of log in the log file" >> log_file_to_monitor.log
+
+logs:
+    - type: file
+      path: /tmp/log_file_to_monitor.log
+      source: devopsschool
+      service: chat
+    - type: file
+      path: /var/log/*.log
+      source: linux
+      service: system
 
 
-
-
-
-
-
-
+/var/log/httpd/access_log
+/var/log/httpd/error_log
 
 
